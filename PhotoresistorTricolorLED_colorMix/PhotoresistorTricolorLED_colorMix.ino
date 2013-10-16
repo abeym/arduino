@@ -35,9 +35,9 @@ void loop()
   Serial.print("\t Blue:");
   Serial.print(blueSensorValue);
   
-  redValue = redSensorValue / 4;
-  greenValue = greenSensorValue / 4;
-  blueValue = blueSensorValue / 4;
+  redValue = redSensorValue / 4 ;
+  greenValue = greenSensorValue / 4 ;
+  blueValue = blueSensorValue / 4 ;
 
   analogWrite(RED_LED_PIN, redValue);
   analogWrite(GREEN_LED_PIN, greenValue);
