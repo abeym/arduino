@@ -1,6 +1,6 @@
 const int GREEN_LED_PIN = 9;
-const int RED_LED_PIN = 10;
-const int BLUE_LED_PIN = 11;
+const int RED_LED_PIN = 11; 
+const int BLUE_LED_PIN = 10; 
 
 const int RED_SENSOR_PIN = A0;
 const int GREEN_SENSOR_PIN = A1;
@@ -34,10 +34,11 @@ void loop()
   Serial.print(greenSensorValue);
   Serial.print("\t Blue:");
   Serial.print(blueSensorValue);
+  Serial.println(    );
   
-  redValue = redSensorValue / 4 ;
-  greenValue = greenSensorValue / 4 ;
-  blueValue = blueSensorValue / 4 ;
+  redValue = redSensorValue / 40 ;
+  greenValue = greenSensorValue / 40 ;
+  blueValue = blueSensorValue / 40 ;
 
   analogWrite(RED_LED_PIN, redValue);
   analogWrite(GREEN_LED_PIN, greenValue);
